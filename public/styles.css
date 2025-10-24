@@ -150,3 +150,38 @@ header h1 {
   color: #374151;
 }
 
+.addcontact{
+  text-align: center;
+  max-width: 300px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #F9F5F0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+.addcontact input{
+  border-radius: 5px;
+  border-style:groove;
+  border-color: white;
+  padding: 10px;
+}
+.addcontact h3{
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+}
+.btn{
+  background-color: #D1BB9E;
+  border-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+}
+.btn:hover{
+  background-color: #88663a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.03);
+}

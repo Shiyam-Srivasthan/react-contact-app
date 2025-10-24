@@ -28,7 +28,8 @@ function AddContactForm({ onAdd }) {
   };
 
   return (
-    <div style={{textAlign:"center"}}>
+    <div className="addcontact">
+      <h3>Add New Contact</h3><br/>
     <form className="add-contact-form" onSubmit={handleSubmit}>
       <input
         type="text"
@@ -59,9 +60,9 @@ function AddContactForm({ onAdd }) {
         placeholder="Phone"
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
-      /><br/>
+      /><br/><br/>
       <button type="submit" className="btn">
-        ➕ Add Contact
+         Add Contact
       </button>
       
     </form>
