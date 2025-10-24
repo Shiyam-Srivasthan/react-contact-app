@@ -9,7 +9,8 @@ The app allows users to **view contacts, search by name, and add new contacts**.
 
 - View a list of contacts with details: Name, Role, Company, Email, Phone  
 - Search contacts by name in real-time  
-- Add a new contact dynamically   
+- Add a new contact dynamically
+- Smooth scroll feature for better UX when accessing the Add Contact form
 - Fully responsive and styled using CSS  
 
 ---
@@ -73,6 +74,5 @@ The app is deployed using **Vercel**:
 * Add edit/delete contact functionality
 * Improve form validation and user feedback
 * Use routing to separate views for Add Contact and Contact Details
-* Smooth scroll feature for better UX when accessing the Add Contact form
 
 ---
