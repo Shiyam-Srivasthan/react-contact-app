@@ -47,7 +47,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the app in your brow
 ## **Deployment**
 
 The app is deployed using **Vercel**:
-[Live App Link](https://your-vercel-link.vercel.app)
+[Live App Link](https://react-contact-app-inky.vercel.app/)
 
 ---
 
