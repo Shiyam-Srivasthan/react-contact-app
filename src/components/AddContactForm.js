@@ -28,7 +28,7 @@ function AddContactForm({ onAdd }) {
   };
 
   return (
-    <div className="addcontact">
+    <div id="addContact" className="addcontact">
       <h3>Add New Contact</h3><br/>
     <form className="add-contact-form" onSubmit={handleSubmit}>
       <input
