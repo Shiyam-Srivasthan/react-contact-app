@@ -19,7 +19,7 @@ The app allows users to **view contacts, search by name, and add new contacts**.
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/Shiyam-Srivasthan/react-contact-app.git
 ````
 
 2. **Navigate into the project folder**
