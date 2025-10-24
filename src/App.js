@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import ContactList from './components/ContactList';
+import SearchBar from './components/SearchBar';
+import AddContactForm from './components/AddContactForm';
+import { contactsData } from './data/contacts';
 import './App.css';
+import Header from './components/Header';
 
 function App() {
+  const [contacts, setContacts] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  useEffect(() => {
+    // Simulate API fetch
+    setTimeout(() => setContacts(contactsData), 300);
+  }, []);
+
+  const filteredContacts = contacts.filter(contact =>
+    contact.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const addContact = (newContact) => {
+    setContacts([...contacts, { ...newContact, id: Date.now() }]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Header/>
+        <br/>
+        <SearchBar onSearch={setSearchTerm} />
+        <ContactList contacts={filteredContacts} />
+        <AddContactForm onAdd={addContact} />
     </div>
   );
 }
