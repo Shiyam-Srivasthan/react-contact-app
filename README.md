@@ -76,3 +76,8 @@ The app is deployed using **Vercel**:
 * Use routing to separate views for Add Contact and Contact Details
 
 ---
+
+## Author
+
+**Shiyam Srivasthan**  
+GitHub: [@Shiyam-Srivasthan](https://github.com/Shiyam-Srivasthan)
